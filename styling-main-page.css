@@ -11,44 +11,62 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
-.submissions-title{
-  width: 500px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  display: block;
-  margin-left: 20px;
+.experience-title {
+    width: 500px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-.scrolling-animation{
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-    
-    -moz-animation: my-animation 15s linear infinite;
-    -webkit-animation: my-animation 15s linear infinite;
-    animation: my-animation 15s linear infinite;
-  }
-  /* for Firefox */
-  @-moz-keyframes my-animation {
-    from { -moz-transform: translateX(100%); }
-    to { -moz-transform: translateX(-100%); }
-  }
-  /* for Chrome */
-  @-webkit-keyframes my-animation {
-    from { -webkit-transform: translateX(100%); }
-    to { -webkit-transform: translateX(-100%); }
-  }  
-  @keyframes my-animation {
-    from {
-      -moz-transform: translateX(100%);
-      -webkit-transform: translateX(100%);
-      transform: translateX(100%);
-    }
-    to {
-      -moz-transform: translateX(-100%);
-      -webkit-transform: translateX(-100%);
-      transform: translateX(-100%);
-    }
+.submissions-title{
+  width: 400px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-left: 330px;
+}
+.man-title, .bx-title {
+  width: 400px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.st-title {
+  width: 400px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.qs-title{
+  width: 400px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bk-title {
+  width: 400px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.qs-hover:hover, .st-hover:hover, .bk-hover:hover, .man-hover:hover, .bx-hover:hover {
+  fill: aqua;
+}
+.box{
+  width: 600px;
+  height: auto;
+}
+.title-exp {
+  width: 550px;
+  height: auto;
 }
 .desc-1{
     font-family: Arial, Helvetica, sans-serif;
@@ -77,13 +95,5 @@ body{
       margin-bottom: 5px;
       padding-top: 10px;
       padding-bottom: 10px;
-}
-.experience-title{
-    width: 500px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
