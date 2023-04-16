@@ -96,4 +96,9 @@ body{
       padding-top: 10px;
       padding-bottom: 10px;
 }
-
+.pages .page{
+  display: none;
+}
+.pages .page.is-active {
+  display: block;
+}
