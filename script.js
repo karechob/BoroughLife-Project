@@ -8,7 +8,7 @@ window.addEventListener('load', () => {
 
         tab_switcher.addEventListener('click', () => {
             document.querySelector('.tabs .tab.is-active').classList.remove('is-active');
-            tab_switcher.parentNode.classList.add('is-active');
+            tab_switcher.parentNode.classList.add('is-active'); 
 
             SwitchPage(page_id);
         });
@@ -76,11 +76,12 @@ window.addEventListener('load', () => {
         submittion_input.type = "text";
         submittion_input.value = submittion;
         submittion_input.setAttribute("readonly", "readonly");
+  
 
         const btn_obj = document.createElement("button");
-        btn_obj.classList.add("like-btn");
-        btn_obj.type = "button";
-        btn_obj.setAttribute('border-2', 'ms-5', 'outline-light');
+        btn_obj.classList.add("man-btn");
+        btn_obj.classList.add("bi");
+        btn_obj.setAttribute('border-2', 'ms-5', 'btn-outline-light', "upvote")
         upvote_btn_el.appendChild(btn_obj);
         BtnPress();
 
