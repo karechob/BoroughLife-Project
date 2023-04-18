@@ -59,6 +59,7 @@ body{
 }
 .qs-hover:hover, .st-hover:hover, .bk-hover:hover, .man-hover:hover, .bx-hover:hover {
   fill: aqua;
+  cursor: pointer;
 }
 .box{
   width: 600px;
