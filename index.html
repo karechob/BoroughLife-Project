@@ -17,7 +17,7 @@
             <img class="header-img" src="pictures/logo1.png" alt="Logo for Website">
         </div>
     </h1>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white bg-opacity-25">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white bg-opacity-25" hidden>
       <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         NAVIGATION
         <span class="navbar-toggler-icon"> </span>
@@ -40,30 +40,30 @@
 
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-white bg-opacity-25">
-            <ul class="tabs" hidden>
-                <li class="tab is-active">
-                    <a data-switcher data-tab="1">Home</a>
+            <ul class="tabs" style="list-style: none; ">
+                <li class="tab is-active" >
+                    <button data-switcher data-tab="1" class="btn ms-5 btn-outline-dark">HOME</button>
                 </li>
-                <li class="tab">
+                <li class="tab is-active" hidden>
                     <a data-switcher data-tab="2">Manhattan</a>
                 </li>
-                <li class="tab">
+                <li class="tab is-active" hidden>
                     <a data-switcher data-tab="3">Brooklyn</a>
                 </li>
-                <li class="tab">
+                <li class="tab is-active" hidden>
                     <a data-switcher data-tab="4">Queens</a>
                 </li>
-                <li class="tab">
+                <li class="tab is-active" hidden>
                     <a data-switcher data-tab="5">The Bronx</a>
                 </li>
-                <li class="tab">
+                <li class="tab is-active" hidden>
                     <a data-switcher data-tab="6">Staten Island</a>
                 </li>
-                <li class="tab">
-                    <a data-switcher data-tab="7">Submit an Experience</a>
+                <li class="tab is-active" >
+                    <button data-switcher data-tab="7" class="btn ms-5 btn-outline-dark">SUBMIT EXPERIENCE</button>
                 </li>
-                <li class="tab">
-                    <a data-switcher data-tab="8">About</a>
+                <li class="tab is-active">
+                    <button data-switcher data-tab="8" class="btn ms-5 btn-outline-dark">ABOUT</button>
                 </li>
             </ul>
         </nav>
@@ -135,14 +135,10 @@
             
                       <div id="submittion" class="container-sm justify-content-center bg-black pt-5 pb-5 mb-5 rounded-pill" class="submission">
                         <div id="content">
-                          <input
-                            type="text"
-                            class="text"
-                            value="Experience"
-                            readonly>
+                          <p>ASKJDALKSJ</p>
                         </div>
                         <div id="actions">
-                          <button id="like-btn" type="button" class="btn border-2 ms-5 btn-outline-light"> <i class="bi bi-hand-thumbs-up"> up-vote</i> </button>
+                          <button id="like-btn" type="button" class="btn border-2 ms-5 btn-outline-light"> <span id="my-icon"></span> up-vote </button>
                         </div> 
                       </div>
                     </div>
@@ -159,7 +155,7 @@
               
                       <div id="manhattan-submittions" class="container justify-content-center bg-opacity-100" >
               
-                        <div id="submittion" class="man-sub container-sm justify-content-center bg-black pt-5 pb-5 mb-5 rounded-pill">
+                        <div id="submittion" class="man-sub container-sm justify-content-center bg-black pt-5 pb-5 mb-5 rounded-pill" hidden>
                           <div id="content">
                             <input
                               type="text"
@@ -168,7 +164,7 @@
                               readonly>
                           </div>
                           <div id="actions">
-                            <button id="like-btn" type="button" class="man-btn btn border-2 ms-5 btn-outline-light"> <i class="bi bi-hand-thumbs-up"> up-vote</i> </button>
+                            <button id="like-btn" type="button" class="man-btn btn border-2 ms-5 btn-outline-light"> <span id="my-icon"></span> up-vote </button>
                           </div> 
                         </div>
                       </div>
@@ -188,7 +184,7 @@
               
                     <div id="brooklyn-submittions" class="container justify-content-center bg-opacity-100">
             
-                      <div id="submittion" class="container-sm justify-content-center bg-black pt-5 pb-5 mb-5 rounded-pill" class="submission">
+                      <div id="submittion" class="container-sm justify-content-center bg-black pt-5 pb-5 mb-5 rounded-pill" hidden>
                         <div id="content">
                           <input
                             type="text"
@@ -197,29 +193,15 @@
                             readonly>
                         </div>
                         <div id="actions">
-                          <button id="like-btn" type="button" class="btn border-2 ms-5 btn-outline-light"> <i class="bi bi-hand-thumbs-up"> up-vote</i> </button>
+                          <button id="like-btn" type="button" class="btn border-2 ms-5 btn-outline-light"> <span id="my-icon"></span> up-vote </button>
                         </div> 
                       </div>
                     </div>
                 </div>
               </div>
               <div class="container justify-content-center bg-opacity-100">
-  
-                <ul class="container-sm justify-content-center bg-black pt-5 pb-5 mb-5 rounded-pill">
-                  <h1 class="text-white ps-5">ID, LOCATION</h1>
-                  <p class="text-white text-center">
-                  The Experience - After checking our coats 
-                  and a few rounds at the bar... 
-                  my friend decided she would treat
-                  us and wanted to get a table so all 
-                  three of us can enjoy the performance. 
-                  She gave her credit card and ID to one of 
-                  the hostesses who promptly sat us and said someone 
-                  would be along to take our bottle service order... 
-                  </p>
-                  <button type="button" class="btn border-2 ms-5 btn-outline-light"> <i class="bi bi-hand-thumbs-up"> up-vote</i> </button>
-                </ul>
-              </div>
+
+            </div>
                
             </div>
             <div class="page" data-page="4">
@@ -233,7 +215,7 @@
               
                     <div id="queens-submittions" class="container justify-content-center bg-opacity-100">
             
-                      <div id="submittion" class="container-sm justify-content-center bg-black pt-5 pb-5 mb-5 rounded-pill" class="submission">
+                      <div id="submittion" class="container-sm justify-content-center bg-black pt-5 pb-5 mb-5 rounded-pill" hidden>
                         <div id="content">
                           <input
                             type="text"
@@ -242,7 +224,7 @@
                             readonly>
                         </div>
                         <div id="actions">
-                          <button id="like-btn" type="button" class="btn border-2 ms-5 btn-outline-light"> <i class="bi bi-hand-thumbs-up"> up-vote</i> </button>
+                          <button id="like-btn" type="button" class="btn border-2 ms-5 btn-outline-light"> <span id="my-icon"></span> up-vote </button>
                         </div> 
                       </div>
                     </div>
@@ -261,7 +243,7 @@
               
                   <div id="bronx-submittions" class="container justify-content-center bg-opacity-100">
           
-                    <div id="submittion" class="container-sm justify-content-center bg-black pt-5 pb-5 mb-5 rounded-pill" class="submission">
+                    <div id="submittion" class="container-sm justify-content-center bg-black pt-5 pb-5 mb-5 rounded-pill" hidden>
                       <div id="content">
                         <input
                           type="text"
@@ -270,7 +252,7 @@
                           readonly>
                       </div>
                       <div id="actions">
-                        <button id="like-btn" type="button" class="btn border-2 ms-5 btn-outline-light"> <i class="bi bi-hand-thumbs-up"> up-vote</i> </button>
+                        <button id="like-btn" type="button" class="btn border-2 ms-5 btn-outline-light"> <span id="my-icon"></span> up-vote </button>
                       </div> 
                     </div>
                   </div>
@@ -288,7 +270,7 @@
               
                     <div id="staten-island-submittions" class="container justify-content-center bg-opacity-100">
             
-                      <div id="submittion" class="container-sm justify-content-center bg-black pt-5 pb-5 mb-5 rounded-pill" class="submission">
+                      <div id="submittion" class="container-sm justify-content-center bg-black pt-5 pb-5 mb-5 rounded-pill" hidden>
                         <div id="content">
                           <input
                             type="text"
@@ -297,7 +279,7 @@
                             readonly>
                         </div>
                         <div id="actions">
-                          <button id="like-btn" type="button" class="btn border-2 ms-5 btn-outline-light"> <i class="bi bi-hand-thumbs-up"> up-vote</i> </button>
+                          <button id="like-btn" type="button" class="btn border-2 ms-5 btn-outline-light"> <span id="my-icon"></span> up-vote </button>
                         </div> 
                       </div>
                     </div>
@@ -363,7 +345,19 @@
                   Share Your Experiences With Others!
                 </h1>
                 <p>
-                  alksuhdakljshdakjshdlkajsdnhjkalgdhsljaks.
+                  Welcome to BoroughLife, the ultimate platform for New York City residents to share their experiences and insights about living in the city that never sleeps. 
+                  Our website is a hub for discussions on a wide range of topics including food, safety, culture, and much more. 
+                  Here, you'll find a diverse community of people sharing their unique perspectives and personal stories about life in different boroughs. 
+                  Whether you're a lifelong New Yorker or a recent transplant, BoroughLife is the perfect place to discover new perspectives and connect with like-minded individuals. 
+                  With our user-friendly interface, you can easily browse and search through topics of your interest and see what others have to say. 
+                  Join us and become a part of the BoroughLife community today! <br> <br>
+
+                  If you have any question, head to the
+                  <a href="help.html" target="_blank">Help Center</a>
+
+                  Or Contact Us at: <br> <br>
+                  borough-life@help.com <br>
+                  (646)-123-4567
                 </p>
               </div>
             </div>
@@ -373,3 +367,7 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
