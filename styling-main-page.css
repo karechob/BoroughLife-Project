@@ -59,6 +59,7 @@ body{
 }
 .qs-hover:hover, .st-hover:hover, .bk-hover:hover, .man-hover:hover, .bx-hover:hover {
   fill: aqua;
+  cursor: pointer;
 }
 .box{
   width: 600px;
@@ -102,7 +103,9 @@ body{
 .pages .page.is-active {
   display: block;
 }
-
+.link-color {
+  color: aqua;
+}
 
 .form-help {
   display: flex;
@@ -127,6 +130,19 @@ body{
 
 .textarea-help {
   height: 100px;
+}
+
+.submission-confirm{
+  text-align: center;
+  color: rgb(53, 236, 7);
+  font-size: larger;
+  font-weight: bold;
+}
+.submission-denied{
+  text-align: center;
+  color: rgb(236, 7, 19);  
+  font-size: larger;
+  font-weight: bold;
 }
 
 
