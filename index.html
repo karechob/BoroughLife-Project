@@ -12,38 +12,18 @@
     <title>BoroughLife</title>
 </head>
 <body>
-    <h1>
-        <div class="logo justify-content-center">
-            <img class="header-img" src="pictures/logo1.png" alt="Logo for Website">
-        </div>
-    </h1>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white bg-opacity-25" hidden>
-      <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        NAVIGATION
-        <span class="navbar-toggler-icon"> </span>
-      </button>
-    
-      <div class="navbar-collapse collapse navbar-light bg-light pt-1 pb-1 rounded-pill justify-content-center" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <button onclick="window.location.href = 'index.html';" type="button" class="btn ms-5 btn-outline-dark"> HOME </button>
-          </li>
-          <li class="nav-item">
-            <button onclick="window.location.href = 'submission.html';" type="button" class="btn ms-5 btn-outline-dark"> SUBMIT EXPERIENCE </button>
-          </li>
-          <li class="nav-item">
-            <button onclick="window.location.href = 'index.html';" type="button" class="btn ms-5 btn-outline-dark"> ABOUT </button>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
     <header>
-        <nav class="navbar navbar-expand-lg justify-content-center navbar-light bg-light bg-white bg-opacity-25 rounded-pill">
-           
-          <ul class="tabs" style="list-style: none; ">
-                <li class="tab is-active" >
-                    <button data-switcher data-tab="1" class="btn mt-4 border-2 ms-5 pe-5 ps-5 btn-outline-dark">HOME</button>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light bg-white bg-opacity-50">
+          <h1>
+            <div class="logo justify-content-center">
+                <img class="header-img" src="pictures/logo1.png" alt="Logo for Website">
+            </div>
+        </h1>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+          <ul class="tabs" style="list-style: none; display: inline-block; display: flex;">
+                <li class="tab is-active">
+                   <button data-switcher data-tab="1" class="btn btn-outline-dark border-2 ps-5 pe-5">HOME</button>
                 </li>
                 <li class="tab is-active" hidden>
                     <a data-switcher data-tab="2">Manhattan</a>
@@ -60,22 +40,20 @@
                 <li class="tab is-active" hidden>
                     <a data-switcher data-tab="6">Staten Island</a>
                 </li>
-                <li class="tab is-active" >
-                    <button data-switcher data-tab="7" class="btn border-2 ps-5 pe-5 btn-outline-dark">SUBMIT EXPERIENCE</button>
+                <li class="tab is-active">
+                  <button data-switcher data-tab="7" class="btn btn-outline-dark border-2 ps-5 pe-5 ms-3">SUBMIT EXPERIENCE</button>
                 </li>
                 <li class="tab is-active">
-                    <button data-switcher data-tab="8" class="btn border-2 ms-5 pe-5 ps-5 btn-outline-dark">ABOUT</button>
+                  <button data-switcher data-tab="8" class="btn btn-outline-dark border-2 ps-5 pe-5 ms-3 me-3">ABOUT</button>
                 </li>
             </ul>
-          
+          </li>
+            </ul>
         </nav>
     </header>
     <main>
       <section class="pages">
             <div class="page is-active" data-page="1">
-             
-                
-            
                 <div class="box container-sm pt-5">
                   <?xml version="1.0" encoding="UTF-8"?>
                   <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 843.87 842.29">
