@@ -5,11 +5,10 @@ body{
 }
 .header-img {
     width: 600px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: 15px;
+}
+.navbar-nav {
+  margin-left: auto;
 }
 .experience-title {
     width: 500px;
