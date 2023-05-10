@@ -16,6 +16,30 @@ window.addEventListener('load', () => {
         
     });
   }
+
+  const ex_button = document.getElementById("ex-btn");
+  
+  ex_button.addEventListener("click", function(){
+    const ex_sec = document.querySelector(".pages .explore-section");
+    const sectionTop = ex_sec.offsetTop;
+    window.scrollTo({
+      top: sectionTop,
+      behavior: "smooth"
+    }); 
+  })
+  const re_button = document.getElementById("re-btn");
+  re_button.addEventListener("click", function(){
+    const re_sec = document.querySelector(".pages .recent-section");
+    const sectionTop = re_sec.offsetTop;
+    window.scrollTo({
+      top: sectionTop,
+      behavior: "smooth"
+    }); 
+  })
+  
+
+
+
   function SwitchPage (page_id) {
   console.log(page_id);
 
@@ -89,7 +113,6 @@ window.addEventListener('load', () => {
     submittions_li = document.querySelector("#home-submittions");
     AddElement(submittions_li);
   }
-
 
     function AddElement (list) {
 

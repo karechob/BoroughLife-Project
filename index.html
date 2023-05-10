@@ -16,8 +16,8 @@
     <header>
         <nav class="navbar navbar-expand-lg justify-content-center navbar-light bg-light bg-white bg-opacity-25 rounded-pill">
           <h1>
-            <div class="logo justify-content-center">
-                <img class="header-img" src="pictures/logo1.png" alt="Logo for Website">
+            <div id="logo-home" class="logo justify-content-center">
+                <img data-switcher data-tab="1" class="header-img" src="pictures/logo1.png" alt="Logo for Website">
             </div>
           </h1>
           <ul class="navbar-nav">
@@ -25,6 +25,8 @@
             <ul class="tabs" style="list-style: none; display: inline-block; display: flex;">
                   <li class="tab is-active">
                      <button data-switcher data-tab="1" class="btn btn-outline-dark border-2 ps-5 pe-5">HOME</button>
+                     <button data-switcher data-tab="1" id="re-btn" class="btn btn-outline-dark border-2 ps-5 pe-5 ms-3">RECENT SUBMISSISONS</button>
+                     <button data-switcher data-tab="1" id="ex-btn" class="btn btn-outline-dark border-2">EXPLORE EXPERIENCES</button>
                   </li>
                   <li class="tab is-active" hidden>
                       <a data-switcher data-tab="2">Manhattan</a>
@@ -55,6 +57,7 @@
     <main>
       <section class="pages">
             <div class="page is-active" data-page="1">
+              <section class="explore-section">
                 <div class="box container-sm pt-5">
                   <?xml version="1.0" encoding="UTF-8"?>
                   <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 843.87 842.29">
@@ -102,6 +105,8 @@
                       </g>
                     </svg> 
                 </div>
+              </section>
+              <section class="recent-section">
                 <p class="desc-1 text-center">
                   EXPLORE, DISCOVER, CONNECT <br> ANYTIME, ANYWHERE
                 </p>
@@ -114,7 +119,7 @@
             
                     <div id="home-submittions" class="container justify-content-center bg-opacity-100">
             
-                      <div id="submittion" class="container-sm justify-content-center bg-black pt-5 pb-5 mb-5 rounded-pill" class="submission" hidden>
+                      <div id="submittion" class="container-sm justify-content-center bg-black pt-5 pb-5 mb-5 rounded-pill" class="submission">
                         <div id="content">
                           <p class="h1 ms-5 text-light">Queens, Entertainment</p>
                           <p class="h5 mt-4 lh-base text-white text-center">
@@ -125,12 +130,55 @@
                         </div>
                         <div id="actions">
                           <button id="like-btn" type="button" class="btn border-2 ms-5 btn-outline-light bi bi-hand-thumbs-up"> up-vote </button>
+                          <script>
+                            function upvote_counter(id){
+                              const upvote_btn = document.getElementById(id);
+                              var clicked = false;
+                              var currentLikes = 0
+                              upvote_btn.addEventListener("click", function() {
+                                if(clicked) {
+                                  currentLikes--;
+                                  clicked=false;
+                                }
+                                else{
+                                  currentLikes++;
+                                  clicked=true;
+                                }
+                                this.innerText = currentLikes + " Up-votes";
+                                if(currentLikes <= 1){
+                                  this.innerText = currentLikes + " Up-vote";
+                                }
+                                if(currentLikes == 0){
+                                  this.innerText = " Up-vote";
+                                }
+                              });
+                            }
+                            upvote_counter("like-btn");
+                          </script>
+                        </div> 
+                      </div>
+                      <div id="submittion" class="container-sm justify-content-center bg-black pt-5 pb-5 mb-5 rounded-pill" class="submission">
+                        <div id="content">
+                          <p class="h1 ms-5 text-light">Queens, Entertainment</p>
+                          <p class="h5 mt-4 lh-base text-white text-center">
+                            Went to Newtown HQ in Astoria, this is such a cute spot! It's got a little something cute for everyone. 
+                            I love their assortment of stickers, especially the corgi stuff they just got. 
+                            I also picked up a folding backpack type bag that I've had my eye on for a while. 
+                            Although it's available elsewhere I really wanted to support a local shop. Check them out!</p>
+                        </div>
+                        <div id="actions">
+                          <button id="like-btn2" type="button" class="btn border-2 ms-5 btn-outline-light bi bi-hand-thumbs-up"> up-vote </button>
+                          <script>
+                            upvote_counter("like-btn2");
+                          </script>
                         </div> 
                       </div>
                     </div>
                 </div>
+              </section>
             </div>
-            <div class="page" data-page="2">
+            <section>
+              <div class="page" data-page="2">
            
                 <div class="container mt-5 rounded-3 bg-white rounded">
                   <h1>
@@ -155,10 +203,10 @@
                         </div>
                       </div>
                   </div>
-                </div>
-                
-                
+                </div>  
             </div>
+            </section>
+            <section>
             <div class="page" data-page="3">
       
                 <div class="container mt-5 rounded-3 bg-white rounded">
@@ -186,38 +234,39 @@
                 </div>
               </div>
               <div class="container justify-content-center bg-opacity-100">
-
-            </div>
-               
-            </div>
-            <div class="page" data-page="4">
-        
-            
-                <div class="container mt-5 rounded-3 bg-white rounded">
-                  <h1>
-                    <img class="qs-title" src="pictures/queens-title.png" alt="Queens">
-                  </h1>
-                  <div class="container justify-content-center bg-opacity-100">
-              
-                    <div id="queens-submittions" class="container justify-content-center bg-opacity-100">
-            
-                      <div id="submittion" class="container-sm justify-content-center bg-black pt-5 pb-5 mb-5 rounded-pill" hidden>
-                        <div id="content">
-                          <input
-                            type="text"
-                            class="text"
-                            value="Experience"
-                            readonly>
-                        </div>
-                        <div id="actions">
-                          <button id="like-btn" type="button" class="btn border-2 ms-5 btn-outline-light"> <span id="my-icon"></span> up-vote </button>
-                        </div> 
-                      </div>
-                    </div>
-                </div>
               </div>
-                
             </div>
+          </section>
+          <section>
+            <div class="page" data-page="4">
+              <div class="container mt-5 rounded-3 bg-white rounded">
+                <h1>
+                  <img class="qs-title" src="pictures/queens-title.png" alt="Queens">
+                </h1>
+                <div class="container justify-content-center bg-opacity-100">
+            
+                  <div id="queens-submittions" class="container justify-content-center bg-opacity-100">
+          
+                    <div id="submittion" class="container-sm justify-content-center bg-black pt-5 pb-5 mb-5 rounded-pill" hidden>
+                      <div id="content">
+                        <input
+                          type="text"
+                          class="text"
+                          value="Experience"
+                          readonly>
+                      </div>
+                      <div id="actions">
+                        <button id="like-btn" type="button" class="btn border-2 ms-5 btn-outline-light"> <span id="my-icon"></span> up-vote </button>
+                      </div> 
+                    </div>
+                  </div>
+              </div>
+            </div>
+              
+          </div>
+          </section>
+          
+            
             <div class="page" data-page="5">
              
           
