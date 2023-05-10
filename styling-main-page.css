@@ -12,11 +12,11 @@ body{
     margin-left: auto;
     margin-right: auto; */
 }
-.navbar-nav {
+.navbar {
   margin-left: auto;
 }
 .experience-title {
-    width: 500px;
+    width: 900px;
     padding-top: 10px;
     padding-bottom: 10px;
     display: block;
@@ -62,11 +62,18 @@ body{
   margin-right: auto;
 }
 .qs-hover:hover, .st-hover:hover, .bk-hover:hover, .man-hover:hover, .bx-hover:hover {
-  fill: aqua;
+  fill: rgb(83, 164, 226);
   cursor: pointer;
 }
+.svg-btn-hover {
+  fill: rgb(83, 164, 226);
+}
 .box{
-  width: 600px;
+  width: 700px;
+  height: auto;
+}
+.exp-title {
+  width: 400px;
   height: auto;
 }
 .title-exp {
@@ -82,7 +89,7 @@ body{
     color: rgba(78, 78, 78, 0.781);
 }
 .btn-outline-dark {
-  font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: medium;
     border-radius: 30px;
