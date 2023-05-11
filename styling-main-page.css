@@ -68,6 +68,9 @@ body{
 .svg-btn-hover {
   fill: rgb(83, 164, 226);
 }
+/* .input-box-re {
+  height: 200px;
+} */
 .box{
   width: 700px;
   height: auto;

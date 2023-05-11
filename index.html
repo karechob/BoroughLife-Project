@@ -8,16 +8,20 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- copy new link --> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- copy new link --> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styling-main-page.css">
     <title>BoroughLife</title>
 </head>
 <body>  
+  <!-- start copy here -->
+  
   <header>
-    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-opacity-70 bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-opacity-70 bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="/pictures/logo1.png" alt="" width="590" height="90">
+          <img src="/pictures/logo1.png" alt="" width="490" height="80">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span><p>VIEW</p>
@@ -25,60 +29,23 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <button class="btn btn-outline-dark border-2 me-2">HOME</button>
+              <button data-switcher data-tab="1" class="btn btn-outline-dark border-2 me-2">HOME</button>
             </li>
             <li class="nav-item order-last">
-              <button class="btn btn-outline-dark border-2 me-2">RECENT SUBMISSISONS</button>
+              <button id="re-btn" data-switcher data-tab="1" class="btn btn-outline-dark border-2 me-2">RECENT SUBMISSISONS</button>
             </li>
             <li class="nav-item order-last">
-              <button class="btn btn-outline-dark border-2 me-2">EXPLORE EXPERIENCES</button>
+              <button id="ex-btn" data-switcher data-tab="1" class="btn btn-outline-dark border-2 me-2">EXPLORE EXPERIENCES</button>
             </li>
             <li class="nav-item order-last">
-              <button class="btn btn-outline-dark border-2 me-2">SUBMIT EXPERIENCE</button>
+              <button data-switcher data-tab="7" class="btn btn-outline-dark border-2 me-2">SUBMIT EXPERIENCE</button>
             </li>
             <li class="nav-item order-last">
-              <button class="btn btn-outline-dark border-2 me-2">ABOUT</button>
+              <button data-switcher data-tab="8" class="btn btn-outline-dark border-2 me-2">ABOUT</button>
             </li>
           </ul>
         </div>
       </div>
-    </nav> -->
-    <nav class="navbar navbar-expand-lg navbar-white bg-light bg-white bg-opacity-50">
-      <div class="logo justify-content-center">
-        <img class="header-img" src="pictures/logo1.png" alt="BoroughLife">
-    </div>
-      <ul class="navbar-nav">
-        <li class="nav-item">
-        <ul class="tabs" style="list-style: none; display: inline-block; display: flex;">
-              <li class="tab is-active">
-                 <button data-switcher data-tab="1" class="btn btn-outline-dark border-2 ps-5 pe-5 me-2">HOME</button>
-                 <button data-switcher data-tab="1" id="re-btn" class="btn btn-outline-dark border-2 ps-5 pe-5">RECENT SUBMISSISONS</button>
-                 <button data-switcher data-tab="1" id="ex-btn" class="btn btn-outline-dark border-2 ps-5 pe-5 ms-2">EXPLORE EXPERIENCES</button>
-              </li>
-              <li class="tab is-active" hidden>
-                  <a data-switcher data-tab="2">Manhattan</a>
-              </li>
-              <li class="tab is-active" hidden>
-                  <a data-switcher data-tab="3">Brooklyn</a>
-              </li>
-              <li class="tab is-active" hidden>
-                  <a data-switcher data-tab="4">Queens</a>
-              </li>
-              <li class="tab is-active" hidden>
-                  <a data-switcher data-tab="5">The Bronx</a>
-              </li>
-              <li class="tab is-active" hidden>
-                  <a data-switcher data-tab="6">Staten Island</a>
-              </li>
-              <li class="tab is-active">
-                <button data-switcher data-tab="7" class="btn btn-outline-dark border-2 ps-5 pe-5 ms-2">SUBMIT EXPERIENCE</button>
-              </li>
-              <li class="tab is-active">
-                <button data-switcher data-tab="8" class="btn btn-outline-dark border-2 ps-5 pe-5 ms-2">ABOUT</button>
-              </li>
-          </ul>
-        </li>
-      </ul>
     </nav>
 </header>
     <main>
@@ -153,6 +120,7 @@
                   </div>
               </div>
               </section>
+              <!-- end copy here -->
               <section class="recent-section mt-5">
                 <div class="container justify-content-center bg-opacity-100">
                   <h1> 
@@ -379,7 +347,7 @@
           
                   <div class="form-group fw-bold">
                     <label for="Location">Select a Borough</label>
-                    <select class="form-control" id="boroughs-dropdown"> <!-- try to use form-select instead  -->
+                    <select class="form-select" id="boroughs-dropdown"> <!-- try to use form-select instead  -->
                       <option>Manhattan</option>
                       <option>Brooklyn</option>
                       <option>Queens</option>
@@ -390,7 +358,7 @@
           
                   <div class="form-group fw-bold">
                     <label for="Location">Select an Experience</label>
-                    <select class="form-control" id="type-of-experience"> <!-- try to use form-select instead  -->
+                    <select class="form-select" id="type-of-experience"> <!-- try to use form-select instead  -->
                       <option>Entertainment</option>
                       <option>Food</option>
                       <option>Safety</option>
@@ -401,12 +369,13 @@
           
                   <div class="form-group fw-bold">
                     <label for="exampleFormControlTextarea1">Tell us about your experience!</label>
-                    <input 
+                    <!-- <input 
                       type="text" 
                       id="experience-text-input" 
                       name="experience-submittion" 
-                      class="form-control">             
-                  </input>
+                      class="form-control  input-box-re" >  -->
+                   <textarea id="experience-text-input" class="form-control" rows="4"></textarea>            
+                  <!-- </input> -->
                   <button 
                       type="submit" 
                       id="submit-btn" 
@@ -466,6 +435,5 @@
     </main>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
-    <script src="bttn-behavior.js"></script>
 </body>
 </html>
