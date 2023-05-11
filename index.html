@@ -14,6 +14,35 @@
 </head>
 <body>  
   <header>
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-opacity-70 bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="/pictures/logo1.png" alt="" width="590" height="90">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span><p>VIEW</p>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <button class="btn btn-outline-dark border-2 me-2">HOME</button>
+            </li>
+            <li class="nav-item order-last">
+              <button class="btn btn-outline-dark border-2 me-2">RECENT SUBMISSISONS</button>
+            </li>
+            <li class="nav-item order-last">
+              <button class="btn btn-outline-dark border-2 me-2">EXPLORE EXPERIENCES</button>
+            </li>
+            <li class="nav-item order-last">
+              <button class="btn btn-outline-dark border-2 me-2">SUBMIT EXPERIENCE</button>
+            </li>
+            <li class="nav-item order-last">
+              <button class="btn btn-outline-dark border-2 me-2">ABOUT</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> -->
     <nav class="navbar navbar-expand-lg navbar-white bg-light bg-white bg-opacity-50">
       <div class="logo justify-content-center">
         <img class="header-img" src="pictures/logo1.png" alt="BoroughLife">
@@ -66,11 +95,11 @@
                               EXPLORE, DISCOVER, CONNECT <br> ANYTIME, ANYWHERE
                             </p>
                           <div class="d-grid gap-2 col-6 mx-auto">
-                              <button class="btn man-bttn btn-outline-dark border-2 pt-3 pb-3 mb-3" id="man-btn" type="button">MANHATTAN</button>
-                              <button class="btn bron-bttn btn-outline-dark border-2 pt-3 pb-3 mb-3" id="bron-btn" type="button">BRONX</button>
-                              <button class="btn bro-bttn btn-outline-dark border-2 pt-3 pb-3 mb-3" id="brook-btn" type="button">BROOKLYN</button>
-                              <button class="btn que-bttn btn-outline-dark border-2 pt-3 pb-3 mb-3" id="queens-btn" type="button">QUEENS</button>
-                              <button class="btn sta-bttn btn-outline-dark border-2 pt-3 pb-3" id="staten-btn" type="button">STATEN ISLAND</button>
+                              <button data-switcher data-tab="2" class="btn man-bttn btn-outline-dark border-2 pt-3 pb-3 mb-3" id="man-btn" type="button">MANHATTAN</button>
+                              <button data-switcher data-tab="5" class="btn bron-bttn btn-outline-dark border-2 pt-3 pb-3 mb-3" id="bron-btn" type="button">BRONX</button>
+                              <button data-switcher data-tab="3" class="btn bro-bttn btn-outline-dark border-2 pt-3 pb-3 mb-3" id="brook-btn" type="button">BROOKLYN</button>
+                              <button data-switcher data-tab="4" class="btn que-bttn btn-outline-dark border-2 pt-3 pb-3 mb-3" id="queens-btn" type="button">QUEENS</button>
+                              <button data-switcher data-tab="6" class="btn sta-bttn btn-outline-dark border-2 pt-3 pb-3" id="staten-btn" type="button">STATEN ISLAND</button>
                             </div>
                       </div>
                       <div class="col-lg-6">
@@ -350,7 +379,7 @@
           
                   <div class="form-group fw-bold">
                     <label for="Location">Select a Borough</label>
-                    <select class="form-control" id="boroughs-dropdown">
+                    <select class="form-control" id="boroughs-dropdown"> <!-- try to use form-select instead  -->
                       <option>Manhattan</option>
                       <option>Brooklyn</option>
                       <option>Queens</option>
@@ -361,7 +390,7 @@
           
                   <div class="form-group fw-bold">
                     <label for="Location">Select an Experience</label>
-                    <select class="form-control" id="type-of-experience">
+                    <select class="form-control" id="type-of-experience"> <!-- try to use form-select instead  -->
                       <option>Entertainment</option>
                       <option>Food</option>
                       <option>Safety</option>
