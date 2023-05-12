@@ -12,6 +12,39 @@ body{
     margin-left: auto;
     margin-right: auto; */
 }
+.dragon-pic {
+   width: 800px;
+  height: auto;
+  --box-shadow-color: rgb(83, 164, 226);
+  box-shadow: 0 0 50px var(--box-shadow-color);
+  border-radius: 30px;
+}
+.beach-pic {
+  width: 800px;
+  height: auto;
+  --box-shadow-color: rgb(83, 164, 226);
+  box-shadow: 0 0 50px var(--box-shadow-color);
+  border-radius: 30px;
+}
+.dj-pic {
+   width: 800px;
+  height: auto;
+  --box-shadow-color: rgb(83, 164, 226);
+  box-shadow: 0 0 50px var(--box-shadow-color);
+  border-radius: 30px;
+}
+.emb-title {
+  width: 300px;
+  height: auto;
+}
+.comm-title {
+  width: 500px;
+  height: auto;
+}
+.conn-title {
+  width: 300px;
+  height: auto;
+}
 .navbar {
   margin-left: auto;
 }
@@ -68,9 +101,6 @@ body{
 .svg-btn-hover {
   fill: rgb(83, 164, 226);
 }
-/* .input-box-re {
-  height: 200px;
-} */
 .box{
   width: 700px;
   height: auto;
@@ -83,13 +113,12 @@ body{
   width: 550px;
   height: auto;
 }
-.desc-1{
+.desc{
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 50px;
-    margin-bottom: 50px;
     text-align: center;
     font-size: medium;
-    color: rgba(78, 78, 78, 0.781);
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.781);
 }
 .btn-outline-dark {
     font-family: Arial, Helvetica, sans-serif;
@@ -146,4 +175,6 @@ body{
   height: 100px;
 }
 
-
+/* .input-box-re {
+  height: 200px;
+} */
