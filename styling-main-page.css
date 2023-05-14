@@ -5,14 +5,55 @@ body{
 }
 .header-img {
     width: 600px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: 15px;
+}
+.dragon-pic {
+  --box-shadow-color: rgb(83, 164, 226);
+  box-shadow: 0 0 50px var(--box-shadow-color);
+  border-radius: 30px;
+}
+.beach-pic {
+  --box-shadow-color: rgb(83, 164, 226);
+  box-shadow: 0 0 50px var(--box-shadow-color);
+  border-radius: 30px;
+}
+.dj-pic {
+  --box-shadow-color: rgb(83, 164, 226);
+  box-shadow: 0 0 50px var(--box-shadow-color);
+  border-radius: 30px;
+}
+.emb-title {
+  width: 300px;
+  height: auto;
+}
+.faq-title{
+  width: 200px;
+  height: auto;
+}
+.about-title{
+  width: 300px;
+  height: auto;
+}
+.comm-title {
+  width: 500px;
+  height: auto;
+}
+.conn-title {
+  width: 300px;
+  height: auto;
+}
+.resize-accordion {
+  width: 800px;
+  height: auto;
+}
+.resize-container{
+  border-radius: 200px;
+}
+.navbar {
+  margin-left: auto;
 }
 .experience-title {
-    width: 500px;
+    width: 800px;
     padding-top: 10px;
     padding-bottom: 10px;
     display: block;
@@ -34,7 +75,7 @@ body{
   margin-right: auto;
 }
 .st-title {
-  width: 400px;
+  width: 550px;
   padding-top: 30px;
   padding-bottom: 30px;
   display: block;
@@ -42,7 +83,7 @@ body{
   margin-right: auto;
 }
 .qs-title{
-  width: 400px;
+  width: 300px;
   padding-top: 30px;
   padding-bottom: 30px;
   display: block;
@@ -58,27 +99,38 @@ body{
   margin-right: auto;
 }
 .qs-hover:hover, .st-hover:hover, .bk-hover:hover, .man-hover:hover, .bx-hover:hover {
-  fill: aqua;
+  fill: rgb(83, 164, 226);
   cursor: pointer;
 }
+.svg-btn-hover {
+  fill: rgb(83, 164, 226);
+}
 .box{
-  width: 600px;
+  width: 700px;
+  height: auto;
+}
+.exp-title {
+  width: 700px;
   height: auto;
 }
 .title-exp {
   width: 550px;
   height: auto;
 }
-.desc-1{
+.desc{
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 50px;
-    margin-bottom: 50px;
     text-align: center;
     font-size: medium;
-    color: rgba(78, 78, 78, 0.781);
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.781);
+}
+.custom-carousel {
+  --box-shadow-color: rgb(83, 164, 226);
+  box-shadow: 0 0 50px var(--box-shadow-color);
+  border-radius: 30px;
 }
 .btn-outline-dark {
-  font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: medium;
     border-radius: 30px;
@@ -104,7 +156,7 @@ body{
   display: block;
 }
 .link-color {
-  color: aqua;
+  color: rgb(83, 164, 226);
 }
 
 .form-help {
@@ -131,5 +183,19 @@ body{
 .textarea-help {
   height: 100px;
 }
+.submission-confirm{
+  text-align: center;
+  color: rgb(113, 188, 0);
+  font-size: larger;
+  font-weight: bold;
+}
+.submission-denied{
+  text-align: center;
+  color: rgb(194, 0, 0);  
+  font-size: larger;
+  font-weight: bold;
+}
 
-
+/* .input-box-re {
+  height: 200px;
+} */
