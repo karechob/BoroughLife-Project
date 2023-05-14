@@ -156,7 +156,7 @@ body{
   display: block;
 }
 .link-color {
-  color: aqua;
+  color: rgb(83, 164, 226);
 }
 
 .form-help {
@@ -185,13 +185,13 @@ body{
 }
 .submission-confirm{
   text-align: center;
-  color: rgb(53, 236, 7);
+  color: rgb(113, 188, 0);
   font-size: larger;
   font-weight: bold;
 }
 .submission-denied{
   text-align: center;
-  color: rgb(236, 7, 19);  
+  color: rgb(194, 0, 0);  
   font-size: larger;
   font-weight: bold;
 }
