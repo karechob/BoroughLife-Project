@@ -26,6 +26,14 @@ body{
   width: 300px;
   height: auto;
 }
+.faq-title{
+  width: 200px;
+  height: auto;
+}
+.about-title{
+  width: 300px;
+  height: auto;
+}
 .comm-title {
   width: 500px;
   height: auto;
@@ -33,6 +41,13 @@ body{
 .conn-title {
   width: 300px;
   height: auto;
+}
+.resize-accordion {
+  width: 800px;
+  height: auto;
+}
+.resize-container{
+  border-radius: 200px;
 }
 .navbar {
   margin-left: auto;
@@ -167,6 +182,18 @@ body{
 
 .textarea-help {
   height: 100px;
+}
+.submission-confirm{
+  text-align: center;
+  color: rgb(53, 236, 7);
+  font-size: larger;
+  font-weight: bold;
+}
+.submission-denied{
+  text-align: center;
+  color: rgb(236, 7, 19);  
+  font-size: larger;
+  font-weight: bold;
 }
 
 /* .input-box-re {
