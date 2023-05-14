@@ -2,6 +2,8 @@ window.addEventListener('load', () => {
 
   const test = document.querySelector('.pages .box .bx-hover');
   behavior();
+  tabIndexL();
+  scroller();
   const tab_switchers = document.querySelectorAll('[data-switcher]');
 
   for (let i = 0; i < tab_switchers.length; i++) {
@@ -234,4 +236,45 @@ window.addEventListener('load', () => {
         svgStatenPath.classList.remove('svg-btn-hover');
     });
   }
+
+  function tabIndexL(){
+    var elements = document.querySelectorAll('*');
+    console.log(elements);
+    for(var i = 0; i < elements.length; i++) {
+      var elemement = elements[i];
+      elemement.tabIndex = i + 1;
+      console.log(elemement.tabIndex);
+    }
+  }
+  function scroller() {
+    const ex_button = document.getElementById("ex-btn");
+    ex_button.addEventListener("click", function(){
+    const ex_sec = document.querySelector(".pages .explore-section");
+    const sectionTop = ex_sec.offsetTop;
+    window.scrollTo({
+      top: sectionTop,
+      behavior: "smooth"
+    }); 
+  })
+    const re_button = document.getElementById("re-btn");
+    re_button.addEventListener("click", function(){
+    const re_sec = document.querySelector(".pages .recent-section");
+    const sectionTop = re_sec.offsetTop;
+    window.scrollTo({
+      top: sectionTop,
+      behavior: "smooth"
+    }); 
+  })
+
+  const faq_button = document.getElementById("faq-btn")
+  faq_button.addEventListener("click", function(){
+    const faq_sec = document.querySelector(".pages .faq-section");
+    const sectionTop = faq_sec.offsetTop;
+    window.scrollTo({
+      top: sectionTop,
+      behavior: "smooth"
+    }); 
+  })
+  }
+
 })

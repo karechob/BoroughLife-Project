@@ -6,22 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!-- copy new link --> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <!-- copy new link --> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styling-main-page.css">
     <title>BoroughLife</title>
 </head>
-<body>  
-  <!-- start copy here -->
-  
+<body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-opacity-70 bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="/pictures/logo1.png" alt="" width="490" height="80">
+          <img data-switcher data-tab="1" src="pictures/logo1.png" alt="" width="490" height="80">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span><p>VIEW</p>
@@ -32,7 +30,7 @@
               <button data-switcher data-tab="1" class="btn btn-outline-dark border-2 me-2">HOME</button>
             </li>
             <li class="nav-item order-last">
-              <button id="re-btn" data-switcher data-tab="1" class="btn btn-outline-dark border-2 me-2">RECENT SUBMISSISONS</button>
+              <button id="re-btn" data-switcher data-tab="1" class="btn btn-outline-dark border-2 me-2">RECENT SUBMISSIONS</button>
             </li>
             <li class="nav-item order-last">
               <button id="ex-btn" data-switcher data-tab="1" class="btn btn-outline-dark border-2 me-2">EXPLORE EXPERIENCES</button>
@@ -43,6 +41,9 @@
             <li class="nav-item order-last">
               <button data-switcher data-tab="8" class="btn btn-outline-dark border-2 me-2">ABOUT</button>
             </li>
+            <li class="nav-item order-last">
+              <button id="faq-btn" data-switcher data-tab="8" class="btn btn-outline-dark border-2 me-2">FAQ</button>
+            </li>
           </ul>
         </div>
       </div>
@@ -50,78 +51,104 @@
 </header>
     <main>
       <section class="pages">
-            <div class="page is-active" data-page="1">
-              <section class="pictures-page m-5"> 
-                <section class="animate-on-scroll">
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="container-fluid">
-                        <h1> 
-                          <img src="pictures/em-title.png" alt="Explore Experiences" class="emb-title mx-auto d-block pt-5 pb-3"> 
-                        </h1>
-                        <p class="text-bg-dark lh-lg fw-bold text-uppercase rounded-2 p-3 text-center">
-                          Share your traditions with your community!
-                          Borough Life provides a platform 
-                          for open communication and dialogue among NYC residents, 
-                          fostering connections and facilitating the exchange of ideas and perspectives.
-                        </p>
+        <div class="page is-active" data-page="1">
+          <section class="pictures-page m-5"> 
+            <section class="animate-on-scroll1">
+              <div id="carouselExample" class="carousel slide custom-carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="carousel-image">
+                      <img src="pictures/beach-grain.png" class="d-block w-100" alt="..." style="width: 1100px; height: 750px; border-radius: 30px;">
+                      <div class="carousel-text-overlay">
+                        <h3>Image 1 Title</h3>
+                        <p>Image 1 description</p>
                       </div>
                     </div>
-                    <div class="col-md-6">
-                      <div class="container-img container-fluid">
-                        <img src="pictures/dragon-grain.png" alt="Explore Experiences" class="dragon-pic mx-auto d-block img-fluid mt-5 mb-5">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="carousel-image">
+                      <img src="pictures/dj-grain.png" class="d-block w-100" alt="..." style="width: 1100px; height: 750px; border-radius: 30px;">
+                      <div class="carousel-text-overlay">
+                        <h3>Image 2 Title</h3>
+                        <p>Image 2 description</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="carousel-image">
+                      <img src="pictures/dragon-grain.png" class="d-block w-100" alt="..." style="width: 1100px; height: 750px; border-radius: 30px;">
+                      <div class="carousel-text-overlay">
+                        <h3>Image 3 Title</h3>
+                        <p>Image 3 description</p>
                       </div>
                     </div>
                   </div>
                 </div>
-                </section>
-                <section class="animate-on-scroll">
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="container-img container-fluid">
-                        <img src="pictures/dj-grain.png" alt="Explore Experiences" class="dj-pic mx-auto d-block img-fluid mt-5 mb-5">
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="container-fluid">
-                          <h1> 
-                            <img src="pictures/com-title.png" alt="Explore Experiences" class="comm-title mx-auto d-block pt-5 pb-5">
-                          </h1>
-                            <p class="text-bg-dark lh-lg fw-bold text-uppercase rounded-2 p-3 text-center">Borough Life provides a platform 
-                            for open communication and dialogue among NYC residents, 
-                            fostering connections and facilitating the exchange of ideas and perspectives.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                </section>
-                <section class="animate-on-scroll">
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="container-fluid">
-                        <h1> 
-                          <img src="pictures/conn-title.png" alt="Explore Experiences" class="conn-title mx-auto d-block pt-5 pb-5"> 
-                        </h1>
-                        <p class="text-bg-dark lh-lg fw-bold text-uppercase rounded-2 p-3 text-center">SHARE YOUR TRADITIONS WITH YOUR COMMUNITY!
-                          <br>BOROUGH LIFE CONNECTS NYC RESIDENTS THROUGH SHARED EXPERIENCES, ALLOWING THEM TO BUILD A SENSE OF COMMUNITY AND UNDERSTANDING.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="container-img container-fluid">
-                        <img src="pictures/beach-grain.png" alt="Explore Experiences" class="beach-pic mx-auto d-block img-fluid mt-5 mb-5">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-                <!-- <div>
-                  <h2 class="text-center fst-italic mt-5 mb-5">ANYTIME, ANYWHERE</h2>
-                </div> -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              
+              <style>
+              .carousel-text-overlay {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                border-radius: 30px;
+                transform: translate(-50%, -50%);
+                background-color: rgba(0, 0, 0, 0.734);
+                color: #fff;
+                text-align: center;
+                padding-left: 900px;
+                padding-right: 900px;
+                padding-top: 400px;
+                padding-bottom: 400px;
+                
+                opacity: 0;
+                transition: opacity 0.5s;
+                
+              }
+              
+              .carousel-image:hover .carousel-text-overlay {
+                opacity: 1;
+              }
+              </style>
+            </section>
+            <script>
+            function animationGen(id){
+              function animateOnScroll() {
+                const section = document.querySelector('.' + id);
+                const sectionTop = section.getBoundingClientRect().top;
+                const sectionBottom = section.getBoundingClientRect().bottom;
+                const isSectionInView = (sectionTop <= window.innerHeight) && (sectionBottom >= 0);
+                if (isSectionInView) {
+                  section.classList.add('show');
+                }
+                if(isSectionInView == false){
+                  section.classList.remove('show')
+                }
+              }
+              window.addEventListener('scroll', animateOnScroll);
+            }
+            animationGen("animate-on-scroll1");
+            </script>
+            <style>
+            /* CSS for the animation */
+            .animate-on-scroll1 {
+              opacity: 0;
+              transform: translateY(50px);
+              transition: opacity 2.5s, transform 2.5s;
+            }
+            .animate-on-scroll1.show {
+              opacity: 1;
+              transform: translateY(0);
+            }
+            </style>
               </section>
               <section class="explore-section">
                 <div class="container-fluid">
@@ -131,7 +158,7 @@
                               <img src="pictures/explore-exp.png" alt="Explore Experiences" class="exp-title mx-auto d-block pt-5 pb-5"> 
                             </h1>
                             <p class="desc text-center mb-5">
-                              START YOUR JOURNEY!<br> BROWSE ALL EXPERIENCES SHARED IN EVERY BOROUGH.
+                              EXPLORE, DISCOVER, CONNECT <br> ANYTIME, ANYWHERE
                             </p>
                           <div class="d-grid gap-2 col-6 mx-auto">
                               <button data-switcher data-tab="2" class="btn man-bttn btn-outline-dark border-2 pt-3 pb-3 mb-3" id="man-btn" type="button">MANHATTAN</button>
@@ -191,9 +218,9 @@
                       </div>
                   </div>
               </div>
-              </section>
-              <!-- end copy here -->
-              <section class="recent-section mt-5">
+            </section>  
+  
+            <section class="recent-section mt-5">
                 <div class="container justify-content-center bg-opacity-100">
                   <h1> 
                     <div class="experience-title mb-5">
@@ -243,17 +270,51 @@
                       </div>
                       <div id="submittion" class="container-sm justify-content-center bg-black pt-5 pb-5 mb-5 rounded-pill" class="submission">
                         <div id="content">
-                          <p class="h1 ms-5 text-light">Queens, Entertainment</p>
+                          <p class="h1 ms-5 text-light">Queens, Safety</p>
                           <p class="h5 mt-4 lh-base text-white text-center">
-                            Went to Newtown HQ in Astoria, this is such a cute spot! It's got a little something cute for everyone. 
-                            I love their assortment of stickers, especially the corgi stuff they just got. 
-                            I also picked up a folding backpack type bag that I've had my eye on for a while. 
-                            Although it's available elsewhere I really wanted to support a local shop. Check them out!</p>
+                            Sunnyside, Queens is known for its peaceful and safe environment. 
+                            I've spent considerable time in Sunnyside and have always felt 
+                            secure walking around the neighborhood, even during late hours. 
+                            The streets are well-lit, and the community's strong sense of unity 
+                            enhances the overall safety of the area.</p>
+                        </div>
+                        <div id="actions">
+                          <button id="like-btn1" type="button" class="btn border-2 ms-5 btn-outline-light bi bi-hand-thumbs-up"> up-vote </button>
+                          <script>
+                            upvote_counter("like-btn1");
+                          </script>
+                        </div> 
+                      </div>
+                      <div id="submittion" class="container-sm justify-content-center bg-black pt-5 pb-5 mb-5 rounded-pill" class="submission">
+                        <div id="content">
+                          <p class="h1 ms-5 text-light">Brooklyn, Food</p>
+                          <p class="h5 mt-4 lh-base text-white text-center">
+                            Brownsville, Brooklyn offers a diverse culinary scene with a range of food options. 
+                            From soul food joints to local delis, you can find flavors that 
+                            satisfy various cravings. While the area may have had its challenges 
+                            in the past, the food establishments in Brownsville provide a 
+                            delicious and authentic taste of the neighborhood.</p>
                         </div>
                         <div id="actions">
                           <button id="like-btn2" type="button" class="btn border-2 ms-5 btn-outline-light bi bi-hand-thumbs-up"> up-vote </button>
                           <script>
                             upvote_counter("like-btn2");
+                          </script>
+                        </div> 
+                      </div>
+                      <div id="submittion" class="container-sm justify-content-center bg-black pt-5 pb-5 mb-5 rounded-pill" class="submission">
+                        <div id="content">
+                          <p class="h1 ms-5 text-light">Staten Island, Food</p>
+                          <p class="h5 mt-4 lh-base text-white text-center">
+                            West New Brighton boasts a vibrant food scene with an array of dining options. 
+                            From cozy cafes to ethnic eateries, there's something for everyone's palate.
+                             The local restaurants offer delicious and flavorful dishes, making it a great place 
+                             for food enthusiasts to explore and indulge in culinary delights.</p>
+                        </div>
+                        <div id="actions">
+                          <button id="like-btn3" type="button" class="btn border-2 ms-5 btn-outline-light bi bi-hand-thumbs-up"> up-vote </button>
+                          <script>
+                            upvote_counter("like-btn3");
                           </script>
                         </div> 
                       </div>
@@ -285,6 +346,38 @@
                             <button id="like-btn" type="button" class="man-btn btn border-2 ms-5 btn-outline-light"> <span id="my-icon"></span> up-vote </button>
                           </div> 
                         </div>
+                        <div id="submittion" class="container-sm justify-content-center bg-black pt-5 pb-5 mb-5 rounded-pill" class="submission">
+                          <div id="content">
+                            <p class="h1 ms-5 text-light">Manhattan, Entertainment</p>
+                            <p class="h5 mt-4 lh-base text-white text-center">
+                              Went to Newtown HQ in Astoria, this is such a cute spot! It's got a little something cute for everyone. 
+                              I love their assortment of stickers, especially the corgi stuff they just got. 
+                              I also picked up a folding backpack type bag that I've had my eye on for a while. 
+                              Although it's available elsewhere I really wanted to support a local shop. Check them out!</p>
+                          </div>
+                          <div id="actions">
+                            <button id="like-btn4" type="button" class="btn border-2 ms-5 btn-outline-light bi bi-hand-thumbs-up"> up-vote </button>
+                            <script>
+                              upvote_counter("like-btn4");
+                            </script>
+                          </div> 
+                        </div>
+                        <div id="submittion" class="container-sm justify-content-center bg-black pt-5 pb-5 mb-5 rounded-pill" class="submission">
+                          <div id="content">
+                            <p class="h1 ms-5 text-light">Manhattan, Entertainment</p>
+                            <p class="h5 mt-4 lh-base text-white text-center">
+                              Went to Newtown HQ in Astoria, this is such a cute spot! It's got a little something cute for everyone. 
+                              I love their assortment of stickers, especially the corgi stuff they just got. 
+                              I also picked up a folding backpack type bag that I've had my eye on for a while. 
+                              Although it's available elsewhere I really wanted to support a local shop. Check them out!</p>
+                          </div>
+                          <div id="actions">
+                            <button id="like-btn5" type="button" class="btn border-2 ms-5 btn-outline-light bi bi-hand-thumbs-up"> up-vote </button>
+                            <script>
+                              upvote_counter("like-btn5");
+                            </script>
+                          </div> 
+                        </div>
                       </div>
                   </div>
                 </div>  
@@ -312,6 +405,39 @@
                         </div>
                         <div id="actions">
                           <button id="like-btn" type="button" class="btn border-2 ms-5 btn-outline-light"> <span id="my-icon"></span> up-vote </button>
+                        </div> 
+                      </div>
+                      <div id="submittion" class="container-sm justify-content-center bg-black pt-5 pb-5 mb-5 rounded-pill" class="submission">
+                        <div id="content">
+                          <p class="h1 ms-5 text-light">Brooklyn, Food</p>
+                          <p class="h5 mt-4 lh-base text-white text-center">
+                            Brownsville, Brooklyn offers a diverse culinary scene with a range of food options. 
+                            From soul food joints to local delis, you can find flavors that 
+                            satisfy various cravings. While the area may have had its challenges 
+                            in the past, the food establishments in Brownsville provide a 
+                            delicious and authentic taste of the neighborhood.</p>
+                        </div>
+                        <div id="actions">
+                          <button id="like-btn6" type="button" class="btn border-2 ms-5 btn-outline-light bi bi-hand-thumbs-up"> up-vote </button>
+                          <script>
+                            upvote_counter("like-btn6");
+                          </script>
+                        </div> 
+                      </div>
+                      <div id="submittion" class="container-sm justify-content-center bg-black pt-5 pb-5 mb-5 rounded-pill" class="submission">
+                        <div id="content">
+                          <p class="h1 ms-5 text-light">Brooklyn, Entertainment</p>
+                          <p class="h5 mt-4 lh-base text-white text-center">
+                            Went to Newtown HQ in Astoria, this is such a cute spot! It's got a little something cute for everyone. 
+                            I love their assortment of stickers, especially the corgi stuff they just got. 
+                            I also picked up a folding backpack type bag that I've had my eye on for a while. 
+                            Although it's available elsewhere I really wanted to support a local shop. Check them out!</p>
+                        </div>
+                        <div id="actions">
+                          <button id="like-btn7" type="button" class="btn border-2 ms-5 btn-outline-light bi bi-hand-thumbs-up"> up-vote </button>
+                          <script>
+                            upvote_counter("like-btn7");
+                          </script>
                         </div> 
                       </div>
                     </div>
@@ -343,17 +469,63 @@
                         <button id="like-btn" type="button" class="btn border-2 ms-5 btn-outline-light"> <span id="my-icon"></span> up-vote </button>
                       </div> 
                     </div>
+                    <div id="submittion" class="container-sm justify-content-center bg-black pt-5 pb-5 mb-5 rounded-pill" class="submission">
+                      <div id="content">
+                        <p class="h1 ms-5 text-light">Queens, Entertainment</p>
+                        <p class="h5 mt-4 lh-base text-white text-center">
+                          Went to Newtown HQ in Astoria, this is such a cute spot! It's got a little something cute for everyone. 
+                          I love their assortment of stickers, especially the corgi stuff they just got. 
+                          I also picked up a folding backpack type bag that I've had my eye on for a while. 
+                          Although it's available elsewhere I really wanted to support a local shop. Check them out!</p>
+                      </div>
+                      <div id="actions">
+                        <button id="like-btn8" type="button" class="btn border-2 ms-5 btn-outline-light bi bi-hand-thumbs-up"> up-vote </button>
+                        <script>
+                          upvote_counter("like-btn8");
+                        </script>
+                      </div> 
+                    </div>
+                    <div id="submittion" class="container-sm justify-content-center bg-black pt-5 pb-5 mb-5 rounded-pill" class="submission">
+                      <div id="content">
+                        <p class="h1 ms-5 text-light">Queens, Safety</p>
+                        <p class="h5 mt-4 lh-base text-white text-center">
+                          Corona, Queens is generally a safe neighborhood with a diverse community. 
+                          While it's advisable to exercise normal precautions like in 
+                          any urban area, I felt relatively secure during my visits. 
+                          The presence of local law enforcement and active community 
+                          engagement contributes to the overall sense of safety in Corona.</p>
+                      </div>
+                      <div id="actions">
+                        <button id="like-btn9" type="button" class="btn border-2 ms-5 btn-outline-light bi bi-hand-thumbs-up"> up-vote </button>
+                        <script>
+                          upvote_counter("like-btn9");
+                        </script>
+                      </div> 
+                    </div>
+                    <div id="submittion" class="container-sm justify-content-center bg-black pt-5 pb-5 mb-5 rounded-pill" class="submission">
+                      <div id="content">
+                        <p class="h1 ms-5 text-light">Queens, Safety</p>
+                        <p class="h5 mt-4 lh-base text-white text-center">
+                          Sunnyside, Queens is known for its peaceful and safe environment. 
+                          I've spent considerable time in Sunnyside and have always felt 
+                          secure walking around the neighborhood, even during late hours. 
+                          The streets are well-lit, and the community's strong sense of unity 
+                          enhances the overall safety of the area.</p>
+                      </div>
+                      <div id="actions">
+                        <button id="like-btn10" type="button" class="btn border-2 ms-5 btn-outline-light bi bi-hand-thumbs-up"> up-vote </button>
+                        <script>
+                          upvote_counter("like-btn10");
+                        </script>
+                      </div> 
+                    </div>
                   </div>
               </div>
             </div>
               
           </div>
-          </section>
-          
-            
+          </section>     
             <div class="page" data-page="5">
-             
-          
               <div class="container mt-5 rounded-3 bg-white rounded">
                 <h1>
                   <img class="bx-title" src="pictures/bronx-title.png" alt="Bronx">
@@ -372,6 +544,38 @@
                       </div>
                       <div id="actions">
                         <button id="like-btn" type="button" class="btn border-2 ms-5 btn-outline-light"> <span id="my-icon"></span> up-vote </button>
+                      </div> 
+                    </div>
+                    <div id="submittion" class="container-sm justify-content-center bg-black pt-5 pb-5 mb-5 rounded-pill" class="submission">
+                      <div id="content">
+                        <p class="h1 ms-5 text-light">Bronx, Entertainment</p>
+                        <p class="h5 mt-4 lh-base text-white text-center">
+                          Went to Newtown HQ in Astoria, this is such a cute spot! It's got a little something cute for everyone. 
+                          I love their assortment of stickers, especially the corgi stuff they just got. 
+                          I also picked up a folding backpack type bag that I've had my eye on for a while. 
+                          Although it's available elsewhere I really wanted to support a local shop. Check them out!</p>
+                      </div>
+                      <div id="actions">
+                        <button id="like-btn11" type="button" class="btn border-2 ms-5 btn-outline-light bi bi-hand-thumbs-up"> up-vote </button>
+                        <script>
+                          upvote_counter("like-btn11");
+                        </script>
+                      </div> 
+                    </div>
+                    <div id="submittion" class="container-sm justify-content-center bg-black pt-5 pb-5 mb-5 rounded-pill" class="submission">
+                      <div id="content">
+                        <p class="h1 ms-5 text-light">Bronx, Entertainment</p>
+                        <p class="h5 mt-4 lh-base text-white text-center">
+                          Went to Newtown HQ in Astoria, this is such a cute spot! It's got a little something cute for everyone. 
+                          I love their assortment of stickers, especially the corgi stuff they just got. 
+                          I also picked up a folding backpack type bag that I've had my eye on for a while. 
+                          Although it's available elsewhere I really wanted to support a local shop. Check them out!</p>
+                      </div>
+                      <div id="actions">
+                        <button id="like-btn12" type="button" class="btn border-2 ms-5 btn-outline-light bi bi-hand-thumbs-up"> up-vote </button>
+                        <script>
+                          upvote_counter("like-btn12");
+                        </script>
                       </div> 
                     </div>
                   </div>
@@ -401,109 +605,181 @@
                           <button id="like-btn" type="button" class="btn border-2 ms-5 btn-outline-light"> <span id="my-icon"></span> up-vote </button>
                         </div> 
                       </div>
+                      <div id="submittion" class="container-sm justify-content-center bg-black pt-5 pb-5 mb-5 rounded-pill" class="submission">
+                        <div id="content">
+                          <p class="h1 ms-5 text-light">Staten Island, Food</p>
+                          <p class="h5 mt-4 lh-base text-white text-center">
+                            West New Brighton boasts a vibrant food scene with an array of dining options. 
+                            From cozy cafes to ethnic eateries, there's something for everyone's palate.
+                             The local restaurants offer delicious and flavorful dishes, making it a great place 
+                             for food enthusiasts to explore and indulge in culinary delights.</p>
+                        </div>
+                        <div id="actions">
+                          <button id="like-btn13" type="button" class="btn border-2 ms-5 btn-outline-light bi bi-hand-thumbs-up"> up-vote </button>
+                          <script>
+                            upvote_counter("like-btn13");
+                          </script>
+                        </div> 
+                      </div>
+                      <div id="submittion" class="container-sm justify-content-center bg-black pt-5 pb-5 mb-5 rounded-pill" class="submission">
+                        <div id="content">
+                          <p class="h1 ms-5 text-light">Staten Island, Entertainment</p>
+                          <p class="h5 mt-4 lh-base text-white text-center">
+                            Went to Newtown HQ in Astoria, this is such a cute spot! It's got a little something cute for everyone. 
+                            I love their assortment of stickers, especially the corgi stuff they just got. 
+                            I also picked up a folding backpack type bag that I've had my eye on for a while. 
+                            Although it's available elsewhere I really wanted to support a local shop. Check them out!</p>
+                        </div>
+                        <div id="actions">
+                          <button id="like-btn14" type="button" class="btn border-2 ms-5 btn-outline-light bi bi-hand-thumbs-up"> up-vote </button>
+                          <script>
+                            upvote_counter("like-btn14");
+                          </script>
+                        </div> 
+                      </div>
                     </div>
                   </div>
                 </div>     
               </div>
-        
-            <div class="page" data-page="7">
-     
-                <div class="container justify-content-center mt-5 rounded-3 bg-white">
-                  <h1>
-                    <div class="submissions-title">
-                      <img src="pictures/submission-head.png" alt="Submissions Title">
+              <section>
+                <div class="page" data-page="7">
+                  <div class="container justify-content-center mt-5 rounded-3 bg-white">
+                    <h1>
+                      <div class="submissions-title">
+                        <img src="pictures/submission-head.png" alt="Submissions Title">
+                      </div>
+                    </h1>          
+                  <form id= "submission-form">
+                    <div class="form-group fw-bold">
+                      <label for="Location">Select a Borough</label>
+                      <select class="form-select" id="boroughs-dropdown"> <!-- try to use form-select instead  -->
+                        <option>Manhattan</option>
+                        <option>Brooklyn</option>
+                        <option>Queens</option>
+                        <option>The Bronx</option>
+                        <option>Staten Island</option>
+                      </select>
                     </div>
-                  </h1>
-            
-                <form id= "submission-form">
-          
-                  <div class="form-group fw-bold">
-                    <label for="Location">Select a Borough</label>
-                    <select class="form-select" id="boroughs-dropdown"> <!-- try to use form-select instead  -->
-                      <option>Manhattan</option>
-                      <option>Brooklyn</option>
-                      <option>Queens</option>
-                      <option>The Bronx</option>
-                      <option>Staten Island</option>
-                    </select>
+                    <div class="form-group fw-bold">
+                      <label for="Location">Select an Experience</label>
+                      <select class="form-select" id="type-of-experience"> <!-- try to use form-select instead  -->
+                        <option>Entertainment</option>
+                        <option>Food</option>
+                        <option>Safety</option>
+                        <option>Culture</option>
+                        <option>Other</option>
+                      </select>
+                    </div>
+                    <div class="form-group fw-bold">
+                      <label for="exampleFormControlTextarea1">Tell us about your experience!</label>
+                      <!-- <input 
+                        type="text" 
+                        id="experience-text-input" 
+                        name="experience-submittion" 
+                        class="form-control  input-box-re" >  -->
+                     <textarea id="experience-text-input" class="form-control" rows="4"></textarea>            
+                    <!-- </input> -->
+                    <button 
+                        type="submit" 
+                        id="submit-btn" 
+                        class="btn mt-5 mb-3 btn-lg btn-outline-dark">Submit
+                      </button>
+                    </div>
+                  </form>
                   </div>
-          
-                  <div class="form-group fw-bold">
-                    <label for="Location">Select an Experience</label>
-                    <select class="form-select" id="type-of-experience"> <!-- try to use form-select instead  -->
-                      <option>Entertainment</option>
-                      <option>Food</option>
-                      <option>Safety</option>
-                      <option>Culture</option>
-                      <option>Other</option>
-                    </select>
-                  </div>
-          
-                  <div class="form-group fw-bold">
-                    <label for="exampleFormControlTextarea1">Tell us about your experience!</label>
-                    <!-- <input 
-                      type="text" 
-                      id="experience-text-input" 
-                      name="experience-submittion" 
-                      class="form-control  input-box-re" >  -->
-                   <textarea id="experience-text-input" class="form-control" rows="4"></textarea>            
-                  <!-- </input> -->
-                  <button 
-                      type="submit" 
-                      id="submit-btn" 
-                      class="btn mt-5 mb-3 btn-lg btn-outline-dark">Submit
+                  <div class="submission-confirm" hidden>
+                    <P>
+                      Submission submitted!
+                    </P>
+                    <button
+                    type= "button"
+                    class="btn mt-5 mb-3 btn-lg btn-outline-dark">Okay  
                     </button>
                   </div>
-          
-                    </form>
-                </div>
-                <div class="submission-confirm" hidden>
-                  <P>
-                    Submission submitted!
-                  </P>
-                  <button
-                  type= "button"
-                  class="btn mt-5 mb-3 btn-lg btn-outline-dark">Okay  
-                  </button>
-                </div>
-                <div class="submission-denied" hidden>
-                  <P>
-                    Please write something!
-                  </P>
-                  <button
-                  type= "button"
-                  class="btn mt-5 mb-3 btn-lg btn-outline-dark">Okay  
-                  </button>
-                </div>
-            </div>
-            <div class="page" data-page="8">
-              <div class="container mt-5">
-
-                <div id="submittion" class="container-sm justify-content-center bg-black pt-5 pb-5 mb-5 rounded-pill" class="submission">
-                  <div id="content">
-                    <h1 class="about-header fst-italic text-white pt-3 text-sm-center fw-bold">
-                      ✹  Share Your Experiences With Others!  ✹
-                    </h1>
-                    <p class="h5 mt-4 me-5 lh-lg ms-5 text-white text-center">
-                      <br>
-                  Welcome to <em>BoroughLife!</em>, the ultimate platform for New York City residents to share their experiences and insights about living in the city that never sleeps. 
-                  <br><br>
-                  Our website is a hub for discussions on a wide range of topics including food, safety, culture, and much more. 
-                  Here, you'll find a diverse community of people sharing their unique perspectives and personal stories about life in different boroughs. 
-                  Whether you're a lifelong New Yorker or a recent transplant, BoroughLife is the perfect place to discover new perspectives and connect with like-minded individuals. 
-                  With our user-friendly interface, you can easily browse and search through topics of your interest and see what others have to say. 
-                  Join us and become a part of the BoroughLife community today! <br> <br>
-
-                  If you have any question, head to the
-                  <a class="link-color" href="help.html" target="_blank">Help Center</a>
-
-                  Or Contact Us at: <br> <br>
-                  borough-life@help.com <br>
-                  (646)-123-4567</p>
+                  <div class="submission-denied" hidden>
+                    <P>
+                      Please write something!
+                    </P>
+                    <button
+                    type= "button"
+                    class="btn mt-5 mb-3 btn-lg btn-outline-dark">Okay  
+                    </button>
                   </div>
+                </div>
+              </section>
+              
+              <div class="page" data-page="8">
+                <section>
+                <div class="container mt-5">
+  
+                  <div id="submittion" class="container-sm justify-content-center bg-black pt-5 pb-5 mb-5 rounded-pill" class="submission">
+                    <div id="content">
+                      <h1 class="about-header fst-italic text-white pt-3 text-sm-center fw-bold">
+                        ✹  Share Your Experiences With Others!  ✹
+                      </h1>
+                      <p class="h5 mt-4 me-5 lh-lg ms-5 text-white text-center">
+                        <br>
+                    Welcome to <em>BoroughLife!</em>, the ultimate platform for New York City residents to share their experiences and insights about living in the city that never sleeps. 
+                    <br><br>
+                    Our website is a hub for discussions on a wide range of topics including food, safety, culture, and much more. 
+                    Here, you'll find a diverse community of people sharing their unique perspectives and personal stories about life in different boroughs. 
+                    Whether you're a lifelong New Yorker or a recent transplant, BoroughLife is the perfect place to discover new perspectives and connect with like-minded individuals. 
+                    With our user-friendly interface, you can easily browse and search through topics of your interest and see what others have to say. 
+                    Join us and become a part of the BoroughLife community today! <br> <br>
+  
+                    If you have any question, check our
+                    <a class="link-color" href="help.html" target="_blank">FAQ</a>
+  
+                    Or Contact Us at: <br> <br>
+                    borough-life@help.com <br>
+                    (646)-123-4567</p>
+                    </div>
+                </div>
               </div>
-            </div>
-      </section>
+            </section>
+            <section class="faq-section">
+              <div id="submittion" class="container-sm justify-content-center bg-black pt-5 pb-5 mb-5 rounded-pill" class="submission">
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Accordion Item #1
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Accordion Item #2
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Accordion Item #3
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+        </section>
     </main>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
