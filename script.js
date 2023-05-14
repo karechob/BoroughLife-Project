@@ -2,7 +2,7 @@ window.addEventListener('load', () => {
 
   const test = document.querySelector('.pages .box .bx-hover');
   behavior();
-  scroller();
+  tabIndexL();
   const tab_switchers = document.querySelectorAll('[data-switcher]');
 
   for (let i = 0; i < tab_switchers.length; i++) {
@@ -17,8 +17,7 @@ window.addEventListener('load', () => {
         
     });
   }
-  tabIndexL();
-  
+  scroller();
   function SwitchPage (page_id) {
   console.log(page_id);
 
